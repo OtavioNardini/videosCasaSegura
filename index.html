@@ -1,352 +1,568 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Método Casa Segura — Primeiros Socorros para Crianças</title>
-  <meta name="description" content="Guia prático de primeiros socorros para crianças por médicas pediatras. Saiba exatamente como agir quando o acidente acontece." />
-  <meta name="keywords" content="primeiros socorros crianças, engasgamento bebê, febre infantil, queimadura criança, método casa segura" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Método Casa Segura - Proteja Seu Filho com Segurança</title>
+  <meta name="description"
+    content="O método criado por duas pediatras que prepara qualquer família para prevenir acidentes em casa">
+
+  <link rel="icon" href="img/ICONE.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+  <!-- ══ LOGO BAR ════════════════════════════════════ -->
+  <div class="logo-bar">
+    <div class="logo-text">PED para Família - Método Casa Segura</div>
+  </div>
 
-<!-- ============================
-     HEADER
-============================= -->
-<header class="site-header" id="top">
-  <nav class="nav-inner">
-    <a href="index.html" class="logo" aria-label="Método Casa Segura - Início">
-      <span class="logo-metodo">Método</span>
-      <span class="logo-casa">Casa</span>
-      <span class="logo-segura">Segura</span>
-    </a>
-
-    <ul class="nav-links" id="nav-links" role="list">
-      <li><a href="#videos">Vídeos</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#videos" class="nav-cta">Acessar Conteúdos</a></li>
-    </ul>
-
-    <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-</header>
-
-<!-- ============================
-     HERO
-============================= -->
-<main>
-  <section class="hero" aria-label="Apresentação">
-    <div class="hero-content">
-      <div class="hero-badge" role="note">
-        <span class="hero-badge-icon">💊</span>
-        Por médicas pediatras especializadas
+  <!-- ══ 1. HEADLINE ═══════════════════════════════════ -->
+  <section class="headline-wrap">
+    <div class="container">
+      <div class="tag-label"
+        style="background:rgba(127,179,213,0.18); color:#7fb3d5; border:1px solid rgba(127,179,213,0.4);">
+        🚀 Lançamento — Primeira Tiragem
       </div>
-
-      <h1 class="hero-title">
-        <span class="word-metodo">Método</span>
-        <span class="word-casa">Casa</span>&nbsp;<span class="word-segura">Segura</span>
+      <h1>
+        O método que ensina sua família a agir<br>
+        em emergências infantis —
+        <em style="color:#aa9d75;">antes que o desespero aconteça.</em>
       </h1>
-
-      <p class="hero-subtitle">
-        Quando o acidente acontece: <strong>saiba exatamente como agir</strong> para proteger seu filho.
+      <p class="sub-headline">
+        Preparação não é exagero. É o maior gesto de amor que um cuidador pode ter.<br>
+        <strong>Com o Método Casa Segura, você age com calma quando cada segundo importa.</strong>
       </p>
-
-      <div class="hero-actions">
-        <a href="#videos" class="btn-primary" id="cta-acessar-conteudos">
-          ▶ Acessar conteúdos
-        </a>
-        <a href="#sobre" class="btn-secondary" id="cta-saiba-mais">
-          Saiba mais
-        </a>
-      </div>
-
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-number">6+</span>
-          <span class="stat-label">Temas essenciais</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">100%</span>
-          <span class="stat-label">Baseado em evidências</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">2</span>
-          <span class="stat-label">Médicas Pediatras</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-image" aria-hidden="true">
-      <img src="images/hero.png" alt="Mãe abraçando criança em ambiente seguro" loading="eager" />
-
-      <div class="hero-badge-float badge-float-1">
-        <span class="badge-icon">❤️</span>
-        <div>
-          <strong>Conteúdo confiável</strong><br>
-          <small>Baseado em evidências</small>
-        </div>
-      </div>
-
-      <div class="hero-badge-float badge-float-2">
-        <span class="badge-icon">🏠</span>
-        <div>
-          <strong>Guia completo</strong><br>
-          <small>Para toda a família</small>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================
-       BENEFITS STRIP
-  ============================= -->
-  <section class="benefits-strip" aria-label="Benefícios">
-    <div class="benefits-grid">
-      <div class="benefit-item reveal">
-        <div class="benefit-icon">🎓</div>
-        <strong class="benefit-title">Conteúdo Especializado</strong>
-        <p class="benefit-desc">Criado por pediatras com expertise em emergências pediátricas</p>
-      </div>
-      <div class="benefit-item reveal">
-        <div class="benefit-icon">⚡</div>
-        <strong class="benefit-title">Rápido e Direto</strong>
-        <p class="benefit-desc">Aprenda o essencial para agir com calma e segurança</p>
-      </div>
-      <div class="benefit-item reveal">
-        <div class="benefit-icon">📱</div>
-        <strong class="benefit-title">Acesse em Qualquer Lugar</strong>
-        <p class="benefit-desc">Disponível no celular, tablet ou computador quando precisar</p>
-      </div>
-      <div class="benefit-item reveal">
-        <div class="benefit-icon">🛡️</div>
-        <strong class="benefit-title">Proteja Seu Filho</strong>
-        <p class="benefit-desc">Informação que salva vidas no momento mais crítico</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================
-       VIDEO CARDS
-  ============================= -->
-  <section class="section videos-section" id="videos" aria-label="Vídeos de primeiros socorros">
-    <div class="section-inner">
-      <header class="section-header reveal">
-        <span class="section-eyebrow">Biblioteca de Conteúdo</span>
-        <h2 class="section-title">Temas que todo pai e mãe<br>precisam saber</h2>
-        <p class="section-subtitle">Vídeos práticos ensinando como agir nas situações mais comuns de emergência doméstica com crianças.</p>
-      </header>
-
-      <div class="cards-grid" id="videos-grid">
-
-        <!-- Card 1: Engasgamento -->
-        <article class="video-card reveal" id="card-engasgamento">
-          <a href="video/engasgamento.html" class="card-thumb" aria-label="Assistir: Engasgamento em Crianças">
-            <img src="images/thumb_engasgamento.png" alt="Como agir em casos de engasgamento" loading="lazy" />
-            <div class="card-play-overlay" aria-hidden="true">
-              <div class="play-btn-overlay">▶</div>
-            </div>
-            <span class="card-tag">Urgente</span>
-          </a>
-          <div class="card-body">
-            <span class="card-category">Vias Aéreas</span>
-            <h3 class="card-title">Engasgamento em Crianças</h3>
-            <p class="card-desc">O que fazer quando seu filho engasga? Aprenda a manobra de Heimlich e como agir com calma nos primeiros segundos.</p>
-          </div>
-          <div class="card-footer">
-            <span class="card-duration">⏱ ~8 min</span>
-            <a href="video/engasgamento.html" class="btn-card" id="btn-engasgamento">Assistir →</a>
-          </div>
-        </article>
-
-        <!-- Card 2: Queimadura -->
-        <article class="video-card reveal" id="card-queimadura">
-          <a href="video/queimadura.html" class="card-thumb" aria-label="Assistir: Queimaduras em Crianças">
-            <img src="images/thumb_queimadura.png" alt="Primeiros socorros para queimaduras" loading="lazy" />
-            <div class="card-play-overlay" aria-hidden="true">
-              <div class="play-btn-overlay">▶</div>
-            </div>
-            <span class="card-tag" style="background: var(--azul-suave);">Cuidados</span>
-          </a>
-          <div class="card-body">
-            <span class="card-category">Pele e Ferimentos</span>
-            <h3 class="card-title">Queimaduras em Crianças</h3>
-            <p class="card-desc">Água quente, fogão, tomadas — queimaduras são comuns. Saiba o que fazer (e o que NUNCA fazer) nos primeiros minutos.</p>
-          </div>
-          <div class="card-footer">
-            <span class="card-duration">⏱ ~10 min</span>
-            <a href="video/queimadura.html" class="btn-card" id="btn-queimadura">Assistir →</a>
-          </div>
-        </article>
-
-        <!-- Card 3: Febre -->
-        <article class="video-card reveal" id="card-febre">
-          <a href="video/febre.html" class="card-thumb" aria-label="Assistir: Febre Alta em Bebês e Crianças">
-            <img src="images/thumb_febre.png" alt="Como controlar febre em crianças" loading="lazy" />
-            <div class="card-play-overlay" aria-hidden="true">
-              <div class="play-btn-overlay">▶</div>
-            </div>
-            <span class="card-tag" style="background: var(--rosa);">Frequente</span>
-          </a>
-          <div class="card-body">
-            <span class="card-category">Saúde Geral</span>
-            <h3 class="card-title">Febre Alta em Bebês e Crianças</h3>
-            <p class="card-desc">Febre acima de quanto é emergência? Como administrar medicação com segurança? Quando ir ao pronto-socorro?</p>
-          </div>
-          <div class="card-footer">
-            <span class="card-duration">⏱ ~12 min</span>
-            <a href="video/febre.html" class="btn-card" id="btn-febre">Assistir →</a>
-          </div>
-        </article>
-
-        <!-- Card 4: Queda -->
-        <article class="video-card reveal" id="card-queda">
-          <a href="video/queda.html" class="card-thumb" aria-label="Assistir: Quedas e Traumatismos">
-            <img src="images/thumb_queda.png" alt="Como agir em casos de queda" loading="lazy" />
-            <div class="card-play-overlay" aria-hidden="true">
-              <div class="play-btn-overlay">▶</div>
-            </div>
-            <span class="card-tag" style="background: var(--dourado);">Atenção</span>
-          </a>
-          <div class="card-body">
-            <span class="card-category">Traumas</span>
-            <h3 class="card-title">Quedas e Traumatismos</h3>
-            <p class="card-desc">Meu filho caiu da cama, da escada, do balanço — como avaliar a gravidade e quando buscar atendimento médico.</p>
-          </div>
-          <div class="card-footer">
-            <span class="card-duration">⏱ ~9 min</span>
-            <a href="video/queda.html" class="btn-card" id="btn-queda">Assistir →</a>
-          </div>
-        </article>
-
-        <!-- Card 5: Afogamento -->
-        <article class="video-card reveal" id="card-afogamento">
-          <a href="video/afogamento.html" class="card-thumb" aria-label="Assistir: Afogamento e Prevenção">
-            <img src="images/thumb_afogamento.png" alt="Prevenção e primeiros socorros para afogamento" loading="lazy" />
-            <div class="card-play-overlay" aria-hidden="true">
-              <div class="play-btn-overlay">▶</div>
-            </div>
-            <span class="card-tag" style="background: var(--azul-forte);">Prevenção</span>
-          </a>
-          <div class="card-body">
-            <span class="card-category">Emergência Grave</span>
-            <h3 class="card-title">Afogamento e Prevenção</h3>
-            <p class="card-desc">Piscinas, banheiras e baldes causam afogamentos. Aprenda a prevenir e os primeiros passos em caso de emergência.</p>
-          </div>
-          <div class="card-footer">
-            <span class="card-duration">⏱ ~11 min</span>
-            <a href="video/afogamento.html" class="btn-card" id="btn-afogamento">Assistir →</a>
-          </div>
-        </article>
-
-        <!-- Card 6: Intoxicação -->
-        <article class="video-card reveal" id="card-intoxicacao">
-          <a href="video/intoxicacao.html" class="card-thumb" aria-label="Assistir: Intoxicação e Envenenamento">
-            <div style="width:100%;height:100%;background:linear-gradient(135deg,#E8F4F8,#B8D9EE);display:flex;align-items:center;justify-content:center;font-size:4rem;" aria-hidden="true">🧪</div>
-            <div class="card-play-overlay" aria-hidden="true">
-              <div class="play-btn-overlay">▶</div>
-            </div>
-            <span class="card-tag" style="background: #8B5CF6;">Alerta</span>
-          </a>
-          <div class="card-body">
-            <span class="card-category">Toxicologia</span>
-            <h3 class="card-title">Intoxicação e Envenenamento</h3>
-            <p class="card-desc">Medicamentos, produtos de limpeza e plantas tóxicas são riscos reais. Saiba como reconhecer e o que fazer imediatamente.</p>
-          </div>
-          <div class="card-footer">
-            <span class="card-duration">⏱ ~10 min</span>
-            <a href="video/intoxicacao.html" class="btn-card" id="btn-intoxicacao">Assistir →</a>
-          </div>
-        </article>
-
-      </div><!-- /.cards-grid -->
-    </div>
-  </section>
-
-  <!-- ============================
-       SOBRE / ABOUT
-  ============================= -->
-  <section class="section about-section" id="sobre" aria-label="Sobre o projeto">
-    <div class="section-inner">
-      <div class="about-grid">
-        <div class="about-image-wrap reveal">
-          <img src="images/hero.png" alt="Dra. Carolina Rady e Dra. Mayze Dal Col - Médicas pediatras" />
-          <div class="about-badge-stamp" aria-label="Por médicas pediatras">
-            <span style="font-size:1.4rem">🌱</span>
-            Por médicas pediatras
-          </div>
-        </div>
-
-        <div class="about-content reveal">
-          <span class="section-eyebrow">Sobre o Método</span>
-          <h2>Criado por quem cuida de crianças todos os dias</h2>
-          <p>O <strong>Método Casa Segura</strong> nasceu da necessidade real que vemos no consultório: pais desesperados sem saber o que fazer nos primeiros minutos de uma emergência com seus filhos.</p>
-          <p>Aqui você encontra informações baseadas em evidências científicas, traduzidas em linguagem simples e direta — porque na hora da emergência, clareza salva vidas.</p>
-
-          <div class="doctors-list">
-            <div class="doctor-item">
-              <div class="doctor-avatar" aria-hidden="true">👩‍⚕️</div>
-              <div class="doctor-info">
-                <strong>Dra. Carolina Rady</strong>
-                <span>Médica Pediatra • Especialista em Emergências</span>
-              </div>
-            </div>
-            <div class="doctor-item">
-              <div class="doctor-avatar" aria-hidden="true">👩‍⚕️</div>
-              <div class="doctor-info">
-                <strong>Dra. Mayze Dal'Col</strong>
-                <span>Médica Pediatra • Saúde Infantil Preventiva</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<!-- ============================
-     FOOTER
-============================= -->
-<footer class="site-footer" aria-label="Rodapé">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <div class="logo-footer-metodo">Método</div>
-      <div class="logo-footer-name">Casa Segura</div>
-      <p>Guia prático de primeiros socorros para crianças. Informação confiável, baseada em evidências, para pais e cuidadores.</p>
-    </div>
-
-    <div class="footer-col">
-      <h4>Conteúdos</h4>
-      <ul>
-        <li><a href="video/engasgamento.html">Engasgamento</a></li>
-        <li><a href="video/queimadura.html">Queimaduras</a></li>
-        <li><a href="video/febre.html">Febre</a></li>
-        <li><a href="video/queda.html">Quedas</a></li>
-        <li><a href="video/afogamento.html">Afogamento</a></li>
-        <li><a href="video/intoxicacao.html">Intoxicação</a></li>
+      <ul class="checklist-topo">
+        <li>Aprenda a prevenir acidentes domésticos</li>
+        <li>Saiba agir em situações de emergência</li>
+        <li>Manobras essenciais demonstradas em vídeo</li>
+        <li>Conteúdo criado por médicas pediatras</li>
+        <li>Acesso imediato à versão digital</li>
       </ul>
+      <a href="#oferta" class="btn btn-laranja">
+        👉 Quero estar preparada para proteger meu filho
+      </a>
+      <p style="margin-top:16px; font-size:13px; opacity:.65;">Criado por Dra. Carolina Rady e Dra. Mayze Dal'Col
+        —
+        pediatras e mães.</p>
     </div>
+  </section>
 
-    <div class="footer-col">
-      <h4>Emergências</h4>
-      <ul>
-        <li><a href="tel:192">SAMU: 192</a></li>
-        <li><a href="tel:193">Bombeiros: 193</a></li>
-        <li><a href="tel:0800722600">CIATo: 0800 722 6001</a></li>
-      </ul>
+  <!-- ══ 2. VÍDEO ══════════════════════════════════════ -->
+  <div class="video-wrap">
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/r148T5DFg5U" allowfullscreen loading="lazy"></iframe>
     </div>
   </div>
 
-  <div class="footer-bottom">
-    <p>&copy; 2024 Método Casa Segura. Todos os direitos reservados.</p>
-    <p>Feito com <span class="heart">❤️</span> para proteger crianças</p>
+  <!-- ══ 3. URGÊNCIA DE LANÇAMENTO ════════════════════ -->
+  <div class="urgencia-outer">
+    <div class="urgencia-banner">
+      <div class="icon">📦</div>
+      <div>
+        <strong>Oferta de lançamento <span class="frete-badge">🚚 Frete
+            Grátis</span></strong>
+        <p>
+          Estamos lançando o Método Casa Segura.
+          As primeiras famílias garantem o kit completo com <strong>frete grátis</strong> — benefício
+          exclusivo desta fase.
+          Após encerrarmos esta tiragem, o valor volta ao preço original e o frete passa a ser cobrado
+          separadamente.
+          <strong>Quando acabar, não tem como voltar atrás.</strong>
+        </p>
+      </div>
+    </div>
   </div>
-</footer>
 
-<script src="js/main.js" defer></script>
+  <!-- Storytelling -->
+  <section class="storytelling">
+    <div class="container">
+
+      <div class="story-content">
+        <h2 class="section-title">
+          <img src="img/ICONE.png" alt="Descrição da imagem" width="35px" height="38px">
+          <strong>A maioria dos acidentes infantis dentro de casa acontece em segundos!</strong>
+        </h2>
+
+        <p class="story-text">
+          E, como mães e pediatras, nós sabemos exatamente o que é viver esse momento em que o coração
+          acelera, a mão treme e a mente parece ficar em branco.
+        </p>
+
+        <p class="story-subtext">
+          Você já passou por isso?
+        </p>
+        <p class="story-text">
+          Reunimos nossa experiência como mães e médicas pediatras para transformar conhecimento e vivência em
+          preparação real.
+        </p>
+        <p class="story-highlight">
+          Nenhuma mãe, pai ou cuidador deveria passar por isso sem preparo.
+        </p>
+
+        <p class="story-finale">
+          Assim nasceu o <strong>Método Casa Segura</strong>: um material feito para que você nunca mais se
+          sinta impotente diante de um acidente doméstico.
+        </p>
+      </div>
+      <div class="elementor-widget-container2">
+        <img src="img/ICONE.png" alt="Descrição da imagem" class="attachment-large size-large wp-image-2809612">
+      </div>
+    </div>
+  </section>
+
+  <!-- Quem Somos -->
+  <section class="about-doctors">
+    <!-- Banner Hero com Imagem -->
+    <div class="about-hero-banner">
+      <div class="about-hero-overlay">
+        <div class="container">
+          <div class="about-hero-content">
+            <h2 class="about-hero-title">Idealizadoras do Projeto</h2>
+            <p class="about-hero-subtitle">
+              Somos pediatras apaixonadas pela saúde infantil, e também mães de dois filhos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Conteúdo da Seção -->
+    <div class="container">
+      <div class="doctors-grid">
+        <div class="doctor-card">
+          <div class="doctor-profile-header">
+            <h3>Dra. Mayze</h3>
+            <p class="doctor-specialty">Pediatra</p>
+            <span class="rqe-badge">RQE 2218</span>
+          </div>
+          <ul class="doctor-curriculum-list">
+            <li>Pós Graduada em Dermatologia Pediátrica</li>
+            <li>Professora e Coordenadora adjunta de Medicina da UNIRG - Paraíso - TO</li>
+            <li>Atualizações em Suplementação infantil (2021-2025)</li>
+            <li>Mestranda em Educação Social - UNIRG (2025)</li>
+          </ul>
+          <div class="doctor-social">
+            <span>@dramayzepediatra</span>
+            <span>@pedparafamilia</span>
+          </div>
+        </div>
+
+        <div class="doctor-card">
+          <div class="doctor-profile-header">
+            <h3>Dra. Carolina</h3>
+            <p class="doctor-specialty">Pediatra & Cardiopediatra</p>
+            <div class="rqe-group">
+              <span class="rqe-badge">RQE 2046</span>
+              <span class="rqe-badge">RQE 2064</span>
+            </div>
+          </div>
+          <ul class="doctor-curriculum-list">
+            <li>Pós Graduanda em saúde mental da criança e do adolescente - Einstein SP</li>
+            <li>Residência médica em Pediatra pela Universidade Federal do Tocantins </li>
+            <li>Residência médica em Cardiologia pediátrica pela FAMERP-SP </li>
+            <li>Atuando há mais de 10 anos com atendimento cardiopediátrico e urgências pediátricas.</li>
+          </ul>
+          <div class="doctor-social">
+            <span>@carolrnd</span>
+            <span>@pedparafamilia</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="mission-statement">
+        Assim criamos o PED Para Família e o Método Casa Segura.<br>
+        Nossa missão é simples:<br>
+        <strong>capacitar as famílias e sua rede de apoio a proteger as crianças com segurança, conhecimento e
+          amor.</strong>
+      </p>
+    </div>
+
+    <div class="cta-container">
+      <a href="#oferta" class="cta-button">QUERO MEU MÉTODO CASA SEGURA</a>
+      <div class="pricing-info">
+        <span class="price">Por apenas <strong>R$ 197,00</strong></span>
+        <span class="shipping">🚚 Frete Grátis</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conteudo -->
+  <section class="conteudo-section">
+    <div class="container">
+      <h2 class="section-title">O Que Você Vai Encontrar Dentro do Método</h2>
+
+      <div class="conteudo-grid">
+        <div class="conteudo-card">
+          <div class="conteudo-icon"></div>
+          <h3>Sumário</h3>
+          <p>Navegue pelos temas e aprenda a agir com segurança em cada situação de emergência.</p>
+          <ul class="sumario-list">
+            <li>RCP</li>
+            <li>ENGASGO</li>
+            <li>AFOGAMENTO</li>
+            <li>CORTES E FERIMENTOS</li>
+            <li>QUEDA COM TRAUMA NA CABEÇA</li>
+            <li>CORPO ESTRANHO - Nariz, Ouvido ou Engolido</li>
+            <li>INGESTÃO ACIDENTAL</li>
+            <li>PICADAS DE INSETOS E ANIMAIS PEÇONHENTOS</li>
+            <li>MORDIDAS DE ANIMAIS</li>
+            <li>FRATURAS E TORÇÕES</li>
+            <li>CHOQUE ELÉTRICO</li>
+            <li>QUEIMADURAS</li>
+            <li>DESMAIO</li>
+            <li>CONVULSÃO</li>
+            <li>COMO MONTAR O KIT DE PRIMEIROS SOCORROS</li>
+          </ul>
+        </div>
+
+        <div class="conteudo-card">
+          <div class="conteudo-icon"></div>
+          <h3>Vídeos práticos</h3>
+          <p>
+            Com os vídeos práticos incluídos no conteúdo, você vai aprender de forma simples e visual a
+            executar manobras de desengasgo e RCP (Ressuscitação Cardiopulmonar) com orientações atualizadas
+            e passo a passo.
+            Os videos foram criados para mostrar exatamente o que fazer em momentos criticos, ajudando você
+            a agir com segurança e rapidez quando cada segundo importa.
+            Esses materiais foram feitos para transformar conhecimento em ação — porque quando você sabe
+            como agir, você protege quem ama com muito mais tranquilidade.
+          </p>
+
+          <p>
+            Além disso, você também descobrirá como agir corretamente em situações de emergência.
+            Os vídeos mostram passo a passo as atitudes que podem fazer toda a diferença, trazendo mais
+            segurança, confiança e preparo para proteger sua família em qualquer situação.
+          </p>
+
+          <p>
+            Esses materiais foram feitos para transformar conhecimento em ação — porque quando você sabe
+            como agir, você protege quem ama com muito mais tranquilidade.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="content-grid">
+
+        <div class="content-card">
+          <div class="content-icon">🎥</div>
+          <h3>Vídeos Práticos e Atualizados</h3>
+          <p>Demonstrações de manobras essenciais (como desengasgo), gravadas de maneira didática.</p>
+        </div>
+
+        <div class="content-card">
+          <div class="content-icon">⚠️</div>
+          <h3>13 Tópicos dos Acidentes Mais Frequentes</h3>
+          <p>Engasgo, queimaduras, quedas, intoxicações, cortes, desmaio, choque elétrico, afogamentos e
+            muito mais.</p>
+        </div>
+
+        <div class="content-card">
+          <div class="content-icon">🧰</div>
+          <h3>Montagem do Kit de Emergência</h3>
+          <p>Lista completa de itens indispensáveis.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-container">
+      <a href="#oferta" class="cta-button">QUERO GARANTIR A
+        SEGURANÇA DO MEU FILHO AGORA</a>
+      <div class="pricing-info">
+        <span class="price">Por apenas <strong>R$ 197,00</strong></span>
+        <span class="shipping">🚚 Frete Grátis</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Antes e Depois -->
+  <section class="before-after">
+    <div class="container">
+      <h2 class="section-title">Antes e Depois do Método Casa Segura</h2>
+
+      <div class="comparison-grid">
+        <div class="comparison-column before">
+          <h3>ANTES</h3>
+          <div class="comparison-item">❌ Insegurança</div>
+          <div class="comparison-item">❌ Medo de não saber agir</div>
+          <div class="comparison-item">❌ Improviso</div>
+          <div class="comparison-item">❌ Pesquisar no Google em pânico</div>
+          <div class="comparison-item">❌ Dúvida constante</div>
+        </div>
+
+        <div class="comparison-column after">
+          <h3>DEPOIS</h3>
+          <div class="comparison-item">✔️ Clareza</div>
+          <div class="comparison-item">✔️ Preparo</div>
+          <div class="comparison-item">✔️ Ação rápida</div>
+          <div class="comparison-item">✔️ Segurança</div>
+          <div class="comparison-item">✔️ Tranquilidade para toda a família</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Problema Invisível -->
+  <section class="problem-section">
+    <div class="container">
+
+      <div class="problem-list">
+        <p class="problem-intro">Engasgos, quedas, queimaduras, desmaio, fraturas, choque elétrico…</p>
+
+        <p class="problem-text">
+          Os acidentes mais comuns dentro de casa são silenciosos — e acontecem mesmo com pais atentos e
+          amorosos.
+        </p>
+
+        <p class="problem-highlight">
+          Mas existe algo ainda mais perigoso:<br>
+          <strong>NÃO SABER O QUE FAZER NA HORA DA EMERGÊNCIA.</strong>
+        </p>
+
+        <div class="problem-points">
+          <div class="problem-item">❌ A intuição falha.</div>
+          <div class="problem-item">❌ O desespero paralisa.</div>
+          <div class="problem-item">❌ A internet confunde.</div>
+          <div class="problem-item">❌ E segundos perdidos podem fazer diferença.</div>
+        </div>
+
+        <div class="elementor-widget-container1">
+          <img src="img/ICONE.png" alt="Descrição da imagem" class="attachment-large size-large wp-image-280961">
+        </div>
+
+
+        <div class="texto-principal">
+          <div class="frase-vermelha">NÃO É FALTA DE AMOR.</div>
+          <div class="frase-azul-e-preto">
+            <span class="parte-preta">É PREPARO —</span>
+            <span class="parte-azul">E ISSO SE APRENDE.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cta-container">
+      <a href="#oferta" class="cta-button">QUERO GARANTIR A
+        SEGURANÇA DO MEU FILHO AGORA</a>
+      <div class="pricing-info">
+        <span class="price">Por apenas <strong>R$ 197,00</strong></span>
+        <span class="shipping">🚚 Frete Grátis</span>
+      </div>
+    </div>
+
+  </section>
+  <!-- Benefícios -->
+  <section class="benefits-section">
+    <div class="container">
+      <h2 class="section-title">Benefícios que Transformam a Rotina da Família</h2>
+
+      <div class="benefits-columns">
+        <div class="benefits-column">
+          <h3 class="benefits-subtitle">Funcionais</h3>
+          <ul class="benefits-list-full">
+            <li>Saber exatamente o que fazer em situações de risco</li>
+            <li>Reconhecer sinais de alerta rapidamente</li>
+            <li>Evitar acidentes com atitudes simples</li>
+            <li>Orientar cuidadores com confiança e clareza</li>
+            <li>Ter acesso a conteúdo seguro e atualizado por médicas pediatras</li>
+          </ul>
+        </div>
+
+        <div class="benefits-column">
+          <h3 class="benefits-subtitle">Emocionais</h3>
+          <ul class="benefits-list-full">
+            <li>Agir com tranquilidade mesmo em momentos críticos</li>
+            <li>Sentir-se preparada, segura e confiante</li>
+            <li>Dormir com mais paz sabendo que sua casa está protegida</li>
+            <li>Saber que você fez tudo o que podia pelo seu filho</li>
+            <li>Proteger quem você ama com responsabilidade e amor</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Depoimentos -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">Prova Social — Depoimentos Reais</h2>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Achei que sabia o que fazer em um engasgo… até descobrir que eu faria
+            tudo errado. O Método Casa Segura mudou completamente minha confiança como mãe."</p>
+          <p class="testimonial-author">— Juliana, mãe do Arthur</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Finalmente um material claro, direto e que realmente ensina. Recomendei
+            para toda a família!"</p>
+          <p class="testimonial-author">— Paulo e Lúcia, avós</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Os vídeos são incríveis! Me senti preparada de verdade."</p>
+          <p class="testimonial-author">— Tatiane, mãe solo</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+  <!-- ══ 11. VALUE STACK + PREÇO + GARANTIA ══════════ -->
+  <section class="secao preco-wrap" id="oferta">
+    <div class="container">
+      <div class="tag-label">Investimento</div>
+      <h2 class="ts">Tudo que você leva no<br><em>Método Casa Segura</em></h2>
+      <p class="sub">Veja o valor real de cada item — e quanto você economiza no lançamento.</p>
+
+      <table class="value-table">
+        <thead>
+          <tr>
+            <th>O que está incluído</th>
+            <th>Valor individual</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>📘 Livro físico <em>Método Casa Segura</em></td>
+            <td>R$ 89,00</td>
+          </tr>
+          <tr>
+            <td>🎥 Plataforma digital — Vídeos das manobras<br><small style="color:#aaa;">(Desengasgo, RCP e
+                RCP pós-afogamento)</small></td>
+            <td>R$ 197,00</td>
+          </tr>
+          <tr>
+            <td>📄 Capítulos digitais dos 3 módulos em PDF</td>
+            <td>R$ 47,00</td>
+          </tr>
+          <tr class="bonus-row">
+            <td>🎁 <strong>Bônus 1</strong> — Cartilha <em>Quarto Seguro</em></td>
+            <td>R$ 37,00</td>
+          </tr>
+          <tr class="bonus-row">
+            <td>🎁 <strong>Bônus 2</strong> — Cartilha <em>Emergências Oftalmológicas</em></td>
+            <td>R$ 37,00</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Valor total real</td>
+            <td>R$ 407,00</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <div class="preco-box">
+        <div class="de-label">De R$ 407,00 — por apenas</div>
+        <div class="parcelas">
+          <span class="pre">12x de</span> R$ 20<span
+            style="font-size:.45em; vertical-align:top; margin-top:14px; display:inline-block; opacity:.85;">,37</span>
+        </div>
+        <div class="avista">ou <strong>R$ 197,00 à vista</strong></div>
+        <div class="frete-info">🚚 Frete grátis neste lançamento</div>
+        <p class="ancoragem">"Menos do que uma consulta particular — para nunca mais ficar paralisada numa
+          emergência."</p>
+        <a href="https://pay.hotmart.com/F105847937L" class="btn btn-branco">
+          Garantir meu kit completo por R$ 197 →
+        </a>
+      </div>
+
+      <div class="garantia-card">
+        <div class="shield">🛡️</div>
+        <div>
+          <h3>Garantia incondicional de 7 dias</h3>
+          <p>Se por qualquer motivo você sentir que o método não era o que esperava, basta enviar uma mensagem
+            e devolvemos <strong>100% do seu investimento</strong> — sem burocracia, sem
+            perguntas.<br><em>Quem confia no que criou, oferece garantia. E nós confiamos.</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr class="div" />
+
+  <!-- ══ 12. FAQ ════════════════════════════════════════ -->
+  <section class="secao faq-wrap">
+    <div class="container">
+      <div class="tag-label">Dúvidas frequentes</div>
+      <h2 class="ts">Tire suas <em>dúvidas</em></h2>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Serve para qualquer cuidador?</summary>
+          <div class="resposta">Sim. O método foi criado para pais, mães, avós, babás e toda a rede de apoio —
+            qualquer pessoa que cuide de crianças pode e deve ter esse preparo.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Eu nunca estudei nada da área da saúde. Vou conseguir aprender?</summary>
+          <div class="resposta">Sim! A linguagem é simples, direta e visual. Os vídeos foram criados
+            exatamente para isso: qualquer pessoa, sem nenhum conhecimento médico, consegue aprender e
+            aplicar.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Eu já pesquiso na internet. Preciso mesmo disso?</summary>
+          <div class="resposta">Na hora do desespero, você não tem tempo para procurar no Google. Aqui você
+            tem um guia rápido, aprovado por pediatras, com instruções corretas — já na sua mão, sem
+            precisar filtrar informações erradas sob pressão.</div>
+        </details>
+        <details class="faq-item">
+          <summary>E se eu já for mãe ou pai experiente?</summary>
+          <div class="resposta">Sempre existe um detalhe que faz diferença — e o método foi atualizado com
+            técnicas essenciais que muitos cuidadores ainda desconhecem, mesmo os mais experientes.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Como funciona o acesso à plataforma digital?</summary>
+          <div class="resposta">Após a confirmação do pagamento, você recebe por e-mail o acesso à plataforma
+            com os vídeos das manobras e os capítulos digitais. O acesso é imediato e fica disponível para
+            você assistir quando precisar.</div>
+        </details>
+        <details class="faq-item">
+          <summary>O livro físico é enviado para todo o Brasil?</summary>
+          <div class="resposta">Sim! O livro é enviado para todo o território nacional. E nesta fase de
+            lançamento da primeira tiragem, o frete é totalmente grátis.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+  <hr class="div" />
+
+  <!-- CTA Final -->
+  <section class="final-cta">
+    <div class="container">
+      <h2 class="section-title">A segurança do seu filho depende de decisões simples — e a melhor delas você
+        pode
+        tomar agora.</h2>
+      <div class="cta-container">
+        <a href="#oferta" class="cta-button large">👉 GARANTIR O MÉTODO CASA SEGURA
+          AGORA</a>
+        <div class="pricing-info">
+          <span class="price">Por apenas <strong>R$ 197,00</strong></span>
+          <span class="shipping">🚚 Frete Grátis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 PED Para Família, Método Casa Segura. Todos os direitos reservados.</p>
+      <p>Criado por médicas pediatras especializadas</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
