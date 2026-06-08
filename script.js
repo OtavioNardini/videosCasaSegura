@@ -167,3 +167,39 @@ document.addEventListener('DOMContentLoaded', function () {
         benefitsObserver.observe(benefitsList);
     }
 });
+
+// ══ Facebook Pixel — InitiateCheckout nos botões de compra Hotmart ══
+// Deduplicação: gera eventId único, envia no Pixel (browser) e passa via ?src=
+// para a Hotmart usar o mesmo event_id no CAPI (server).
+document.addEventListener('DOMContentLoaded', function () {
+    var botoesCheckout = document.querySelectorAll('.btn-hotmart-checkout');
+
+    botoesCheckout.forEach(function (botao) {
+        botao.addEventListener('click', function (e) {
+            e.preventDefault(); // impede o redirecionamento imediato
+
+            // Gera um eventId único para deduplicação Pixel ↔ CAPI
+            var eventId = 'ev_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+
+            // Dispara o evento InitiateCheckout do Facebook Pixel com eventID
+            if (typeof fbq === 'function') {
+                fbq('track', 'InitiateCheckout', {
+                    value: 197.00,
+                    currency: 'BRL',
+                    content_name: 'Método Casa Segura',
+                    num_items: 1
+                }, { eventID: eventId });
+            }
+
+            // Monta a URL de destino com ?src=eventId para a Hotmart
+            var destino = botao.getAttribute('href');
+            var separador = destino.indexOf('?') === -1 ? '?' : '&';
+            var destinoComSrc = destino + separador + 'src=' + eventId;
+
+            // Aguarda brevemente para o pixel disparar, depois redireciona
+            setTimeout(function () {
+                window.location.href = destinoComSrc;
+            }, 300);
+        });
+    });
+});

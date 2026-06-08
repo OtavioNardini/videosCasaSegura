@@ -3,6 +3,36 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1720593125954827');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1720593125954827&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMBSBRDGEN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-GMBSBRDGEN');
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Método Casa Segura - Proteja Seu Filho com Segurança</title>
   <meta name="description"
@@ -12,6 +42,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+
+
+
 </head>
 
 <body>
@@ -36,15 +69,46 @@
         Preparação não é exagero. É o maior gesto de amor que um cuidador pode ter.<br>
         <strong>Com o Método Casa Segura, você age com calma quando cada segundo importa.</strong>
       </p>
+
+      <div class="hero-book-wrapper">
+        <img src="img/mockup-livro.png" alt="Livro Método Casa Segura" class="hero-book-img">
+      </div>
+
       <ul class="checklist-topo">
         <li>Saiba agir em situações de emergência</li>
         <li>Manobras essenciais demonstradas em vídeo</li>
         <li>Conteúdo criado por médicas pediatras</li>
         <li>Acesso imediato à plataforma digital</li>
       </ul>
-      <a href="#oferta" class="btn btn-laranja">
-        👉 Quero estar preparado para proteger meu filho
-      </a>
+
+      <div class="hero-pricing-wrapper">
+        <div class="hero-preco-box">
+          <div class="de-label">De R$ 407,00 — por apenas</div>
+          <div class="parcelas">
+            <span class="pre">12x de</span> R$ 20<span
+              style="font-size:.45em; vertical-align:top; margin-top:14px; display:inline-block; opacity:.85;">,37</span>
+          </div>
+          <div class="avista">ou <strong>R$ 197,00 à vista</strong></div>
+          <div class="frete-info">🚚 Frete grátis neste lançamento</div>
+          <p class="ancoragem">"Menos do que uma consulta particular — para nunca mais ficar paralisada numa
+            emergência."</p>
+          <a href="https://pay.hotmart.com/E105955245P" id="botao-compra"
+            class="btn btn-terracota pulse-btn btn-hotmart-checkout"
+            style="width:100%; text-align:center; box-sizing:border-box;">
+            Garantir meu kit completo por R$ 197 →
+          </a>
+        </div>
+
+        <div class="hero-garantia-card">
+          <div class="shield">🛡️</div>
+          <div>
+            <h3>Garantia incondicional de 7 dias</h3>
+            <p>Se por qualquer motivo você sentir que o método não era o que esperava, basta enviar uma mensagem e
+              devolvemos <strong>100% do seu investimento</strong> — sem burocracia, sem perguntas.<br><em>Quem confia
+                no que criou, oferece garantia. E nós confiamos.</em></p>
+          </div>
+        </div>
+      </div>
       <p style="margin-top:16px; font-size:13px; opacity:.65;">Criado por Dra. Carolina Rady e Dra. Mayze Dal'Col
         —
         pediatras e mães.</p>
@@ -54,8 +118,13 @@
   <!-- ══ 2. VÍDEO ══════════════════════════════════════ -->
   <div class="video-wrap">
     <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/r148T5DFg5U" allowfullscreen loading="lazy"></iframe>
+      <iframe
+        src="https://player.vimeo.com/video/1194811377?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;"
+        title="PED - VENDAS Menor"></iframe>
     </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
   </div>
 
   <!-- ══ 3. URGÊNCIA DE LANÇAMENTO ════════════════════ -->
@@ -446,7 +515,8 @@
       </div>
 
       <div class="btn-wrap">
-        <a href="https://pay.hotmart.com/F105847937L" class="btn btn-terracota">Garantir meu kit completo por R$ 197
+        <a href="https://pay.hotmart.com/E105955245P" class="btn btn-terracota btn-hotmart-checkout">Garantir meu kit
+          completo por R$ 197
           →</a>
       </div>
     </div>
@@ -462,57 +532,60 @@
       <h2 class="ts">Tudo que você leva no<br><em>Método Casa Segura</em></h2>
       <p class="sub">Veja o valor real de cada item — e quanto você economiza no lançamento.</p>
 
-      <table class="value-table">
-        <thead>
-          <tr>
-            <th>O que está incluído</th>
-            <th>Valor individual</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>📘 Livro físico <em>Método Casa Segura</em></td>
-            <td>R$ 147,00</td>
-          </tr>
-          <tr>
-            <td>🎥 Plataforma digital — Vídeos das manobras<br><small style="color:#aaa;">(Desengasgo, RCP e
-                RCP pós-afogamento)</small></td>
-            <td>R$ 97,00</td>
-          </tr>
-          <tr>
-            <td>📄 Capítulos digitais dos 3 módulos em PDF</td>
-            <td>R$ 65,00</td>
-          </tr>
-          <tr class="bonus-row">
-            <td>🎁 <strong>Bônus 1</strong> — Cartilha <em>Quarto Seguro</em></td>
-            <td>R$ 49,00</td>
-          </tr>
-          <tr class="bonus-row">
-            <td>🎁 <strong>Bônus 2</strong> — Cartilha <em>Emergências Oftalmológicas</em></td>
-            <td>R$ 49,00</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td>Valor total real</td>
-            <td>R$ 407,00</td>
-          </tr>
-        </tfoot>
-      </table>
-
       <div class="preco-box">
-        <div class="de-label">De R$ 407,00 — por apenas</div>
-        <div class="parcelas">
-          <span class="pre">12x de</span> R$ 20<span
-            style="font-size:.45em; vertical-align:top; margin-top:14px; display:inline-block; opacity:.85;">,37</span>
+        <div class="preco-box-top">
+          <div class="de-label">De R$ 407,00 — por apenas</div>
+          <div class="parcelas">
+            <span class="pre">12x de</span> R$ 20<span
+              style="font-size:.45em; vertical-align:top; margin-top:14px; display:inline-block; opacity:.85;">,37</span>
+          </div>
+          <div class="avista">ou <strong>R$ 197,00 à vista</strong></div>
+          <div class="frete-info">🚚 Frete grátis neste lançamento</div>
+          <p class="ancoragem">"Menos do que uma consulta particular — para nunca mais ficar paralisada numa
+            emergência."</p>
+          <a href="https://pay.hotmart.com/E105955245P" class="btn btn-terracota btn-hotmart-checkout"
+            style="font-size: 18px; padding: 22px 32px; width: 100%; max-width: 480px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); transform: scale(1.05); margin-top: 10px;">
+            Garantir meu kit completo por R$ 197 →
+          </a>
         </div>
-        <div class="avista">ou <strong>R$ 197,00 à vista</strong></div>
-        <div class="frete-info">🚚 Frete grátis neste lançamento</div>
-        <p class="ancoragem">"Menos do que uma consulta particular — para nunca mais ficar paralisada numa
-          emergência."</p>
-        <a href="https://pay.hotmart.com/F105847937L" class="btn btn-branco">
-          Garantir meu kit completo por R$ 197 →
-        </a>
+
+        <table class="value-table">
+          <thead>
+            <tr>
+              <th>O que está incluído</th>
+              <th>Valor individual</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>📘 Livro físico <em>Método Casa Segura</em></td>
+              <td>R$ 147,00</td>
+            </tr>
+            <tr>
+              <td>🎥 Plataforma digital — Vídeos das manobras<br><small style="color:#777;">(Desengasgo, RCP e
+                  RCP pós-afogamento)</small></td>
+              <td>R$ 97,00</td>
+            </tr>
+            <tr>
+              <td>📄 Capítulos digitais dos 3 módulos em PDF</td>
+              <td>R$ 65,00</td>
+            </tr>
+            <tr class="bonus-row">
+              <td>🎁 <strong>Bônus 1</strong> — Cartilha <em>Quarto Seguro</em></td>
+              <td>R$ 49,00</td>
+            </tr>
+            <tr class="bonus-row">
+              <td>🎁 <strong>Bônus 2</strong> — Cartilha <em>Emergências Oftalmológicas</em></td>
+              <td>R$ 49,00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Valor total real</td>
+              <td>R$ 407,00</td>
+            </tr>
+          </tfoot>
+        </table>
       </div>
 
       <div class="garantia-card">
@@ -593,8 +666,17 @@
   <!-- Rodapé -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 PED Para Família, Método Casa Segura. Todos os direitos reservados.</p>
-      <p>Criado por médicas pediatras especializadas</p>
+      <div class="footer-links">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+        <a href="mailto:pedparafamilia@gmail.com
+">pedparafamilia@gmail.com
+        </a>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2026 PED Para Família, Método Casa Segura. Todos os direitos reservados.</p>
+        <p>CNPJ: 23.284.700/0001-50 &bull; Criado por médicas pediatras especializadas</p>
+      </div>
     </div>
   </footer>
 
